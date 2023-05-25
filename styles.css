@@ -6,6 +6,42 @@
   font-family: 'Port Lligat Sans', 'sans-serif';
 }
 
+/* CUSTOM CURSOR */
+
+.cursor{
+  position: absolute;
+  z-index: 999;
+
+  height: 40px;
+  width: 40px;
+
+  border: 1px solid rgba(0, 255, 0, 1);
+  border-radius: 50%;
+
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+.cursorGlow{
+  border-radius: 50%;
+  animation: cursorGlow 0.7s ease 0s 1 normal forwards;
+}
+
+.cursor2{
+  position: absolute;
+  z-index: 999;
+
+  border: 1px solid rgba(0, 255, 0, 1);
+  background-color: rgba(0, 255, 0, 1);
+  border-radius: 50%;
+
+  height: 10px;
+  width: 10px;;
+
+  top: 15px;
+  left: 15px;
+}
+
 
 /* ham */
 
