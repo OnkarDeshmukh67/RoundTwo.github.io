@@ -1,3 +1,33 @@
+let cursor = document.querySelector('.cursor')
+
+document.addEventListener('mousemove' , e => {
+  cursor.setAttribute("style" , "top: "+(e.pageY -20)+"px; left: "+(e.pageX -20)+"px;")
+
+})
+
+document.addEventListener('click' , () => {
+  cursor.classList.add('cursorGlow')
+
+  setTimeout(() => {
+  cursor.classList.remove('cursorGlow')
+  }, 750);
+})
+
+let cursor2 = document.querySelector('.cursor2')
+
+document.addEventListener('mousemove' , e => {
+  cursor2.setAttribute("style" , "top: "+(e.pageY -5)+"px; left: "+(e.pageX -5)+"px;")
+
+})
+
+document.addEventListener('click' , () => {
+  cursor2.classList.add('cursorGlow')
+
+  setTimeout(() => {
+  cursor2.classList.remove('cursorGlow')
+  }, 750);
+})
+
 let navbar = document.getElementById('navbar');
 let ul = document.getElementById('ul');
 
